@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import "../index.css";
+import shs from '../components/Images/attractki.png';
 
 const Shop = props => (
   <tr>
@@ -37,27 +39,71 @@ export default class shopLocal extends Component {
   }
   render() {
     return (
+    
+      
+
+
+
+      <div>
+
+      
+      <header id="header-section-shop">
+
+      <div className="tophead">
+      <h2>SHOPPING</h2>
+      <p>Whether it’s luxury designer boutiques, concept shops or outlet malls, Miami is a little piece of shopping heaven.</p>
+     
+     
+
+      </div>
+
+      </header>
+     
+
+
+
+       <section>
+        <div>
+
+        </div>
+       </section>
+
+
+        <div>
+
+        </div>
+
+        <div>
+          
+        </div>
+
+        <div>
+
+        </div>
+      </div>
         
-      <div className="text-center">
-        <h1>Best Shopping in Cincinnati!</h1>
-        <span >Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ullam, voluptatem neque tempora laudantium voluptas dicta, optio minus inventore voluptatibus rerum! Nisi ab ipsum doloribus vel eum veritatis velit voluptate deleniti nemo, ipsam aperiam consequuntur, minus aliquid ratione accusantium, distinctio omnis provident asperiores impedit earum. Vero enim culpa totam vitae.</span>
-        <table className="table">
-    <thead className="thead-light">
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Image</th>
-        <th>Address</th>
-        <th>City</th>
-        <th>State</th>
-        <th>Zipcode</th>
-      </tr>
-    </thead>
-    <tbody>
-      { this.shopLocal() }
-    </tbody>
-  </table>
-</div>
+//       <div className="text-center">
+
+
+//         <h1>Best Shopping in Cincinnati!</h1>
+//         <span >Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ullam, voluptatem neque tempora laudantium voluptas dicta, optio minus inventore voluptatibus rerum! Nisi ab ipsum doloribus vel eum veritatis velit voluptate deleniti nemo, ipsam aperiam consequuntur, minus aliquid ratione accusantium, distinctio omnis provident asperiores impedit earum. Vero enim culpa totam vitae.</span>
+//         <table className="table">
+//     <thead className="thead-light">
+//       <tr>
+//         <th>Name</th>
+//         <th>Description</th>
+//         <th>Image</th>
+//         <th>Address</th>
+//         <th>City</th>
+//         <th>State</th>
+//         <th>Zipcode</th>
+//       </tr>
+//     </thead>
+//     <tbody>
+//       { this.shopLocal() }
+//     </tbody>
+//   </table>
+// </div>
       
 
 
