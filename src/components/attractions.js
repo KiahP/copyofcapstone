@@ -1,82 +1,64 @@
-import React, {Component} from 'react';
-import "../index.css";
-import KingsIsland from './Images/KingsIsland.jpg';
-import Zoo from './Images/CincinnatiZoo.jpg';
-import Museum from './Images/CincyMuseum.jpg';
-import Coney from './Images/ConeyIsland.jpg';
+import React, { Component } from 'react';
+import axios from 'axios';
 
+const Attraction = props => (
+  <tr>
+    <td>{props.attraction.name}</td>
+    <td>{props.attraction.description}</td>
+    <td><img src={props.attraction.image} alt=""/></td>
+    <td>{props.attraction.address}</td>
+    <td>{props.attraction.city}</td>
+    <td>{props.attraction.state}</td>
+    <td>{props.attraction.zipcode}</td>
+  </tr>
+)
 
- class Attractions extends Component {
+export default class Attractions extends Component {
+  constructor(props) {  
+    super(props); 
+    
+    
+    
+    this.state = {cincyAttractions: []};  
+  }
+  componentDidMount() {
+    axios.get('http://localhost:5000/attraction/')
+     .then(response => {
+       this.setState({ cincyAttractions: response.data });
+     })
+     .catch((error) => {
+        console.log(error);
+     })
+  }
+  Attractions() {
+    return this.state.cincyAttractions.map(currentattraction => {
+      return <Attraction attraction={currentattraction} key={currentattraction._id}/>;
+    })
+  }
   render() {
     return (
-      <div>
-        <h2 >Cincinnati Attractions - under contruction</h2>
+        
+      <div className="text-center">
+        <h1>Family Fun in Cincy!</h1>
+        <span >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, nesciunt illum tempore eius quam fugiat odio sapiente totam excepturi, vitae odit exercitationem corporis voluptatibus et modi. Saepe fuga sint quod, iusto deleniti voluptates ad obcaecati quae vel maxime eos, non at quia id aspernatur sequi! Saepe eligendi doloremque mollitia eos.</span>
+        <table className="table">
+    <thead className="thead-light">
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Image</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Zipcode</th>
+      </tr>
+    </thead>
+    <tbody>
+      { this.Attractions() }
+    </tbody>
+  </table>
+</div>
 
-
-        <div className="card mb-3 hcard" >
-        <div className="row g-0">
-        <div class="col-md-4">
-        <img src={KingsIsland} alt="KI" id="KI" />
-        </div>
-        <div className="col-md-8">
-        <div className="card-body">
-        <h5> Kings Island</h5>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, cumque.</p>
-
-        </div>
-
-        </div>
-
-        </div>
-        </div>
-
-        <div className="card mb-3 hcard" >
-        <div className="row g-0">
-        <div class="col-md-4">
-        <img src={Museum} alt="Museum" id="Museum" />
-        </div>
-        <div className="col-md-8">
-        <div className="card-body">
-        <h5> Cincinnati Museum Center</h5>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, cumque.</p>
-        </div>
-        </div>
-        </div>
-        </div>
-
-        <div className="card mb-3 hcard" >
-        <div className="row g-0">
-        <div class="col-md-4">
-        <img src={Zoo} alt="zoo" id="zoo" />
-        </div>
-        <div className="col-md-8">
-        <div className="card-body">
-        <h5> Cincinnati Zoo and Botanical Gardens</h5>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, cumque.</p>
-        </div>
-        </div>
-        </div>
-        </div>
-
-        <div className="card mb-3 hcard" >
-        <div className="row g-0">
-        <div class="col-md-4">
-        <img src={Coney} alt="Coney" id="Coney" />
-        </div>
-        <div className="col-md-8">
-        <div className="card-body">
-        <h5> Coney Island</h5>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, cumque.</p>
-        </div>
-        </div>
-        </div>
-        </div>
-
-      </div>
-
-      
-    )
-  }
+);
 }
-
-export default Attractions
+}
