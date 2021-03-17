@@ -57,14 +57,14 @@ code {
   border-width: thick;
 } */
 
-img{
+/* img{
   width: 150px;
   height: 150px;
  border-radius: 50%;
   border-Width: 3;
   border-Color: red
   
-}
+} */
 #drake {
   align-self: flex-end;
 }
@@ -94,6 +94,49 @@ footer{
 
 
 /* shop pages css */
-.tophead{
+
+
+/* importing google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+ #header-section-shop{
+height: 700px;
+width: 100%;
+} 
+
+
+.shoptophead{
+  background-image: url(./components/Images/shopcincypage.jpg);
+  height: 100vh;
+  min-height: 300px;
+ 
+  background: no repeat center center scroll rgba(255,255,255,0.5);;
+  background-size: cover; 
+  border-bottom-left-radius: 50% 25%;
+  border-bottom-right-radius: 50% 25%;
+  
+}
+
+.attracttophead{
   background-image: url(./components/Images/attractpage.jpg);
+  height: 100vh;
+  top: 50px;
+  min-height: 300px;
+  background: no repeat center center scroll rgba(255,255,255,0.5);;
+  background-size: cover; 
+  border-bottom-left-radius: 50% 25%;
+  border-bottom-right-radius: 50% 25%;
+
+}
+
+.header-text{
+  font-family: 'Poppins', sans-serif; 
+  position: absolute;
+  left: 16px;
+ 
+}
+
+.bigger-font{
+  font-size: 50px;
 }

@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 // Import Components
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import Home  from "./components/Home";
 import ShopLocal  from "./components/ShopLocal";
 import Attractions  from "./components/Attractions";
@@ -31,7 +31,7 @@ function App() {
      <Route path="/history" component={CincyHistory} />
  
     </Switch> 
-     <Footer /> 
+     {/* <Footer />  */}
     </div>
   
     </Router>

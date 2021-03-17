@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import "../index.css";
-import shs from '../components/Images/attractki.png';
+
 
 const Shop = props => (
   <tr>
@@ -48,38 +48,14 @@ export default class shopLocal extends Component {
 
       
       <header id="header-section-shop">
-
-      <div className="tophead">
-      <h2>SHOPPING</h2>
-      <p>Whether it’s luxury designer boutiques, concept shops or outlet malls, Miami is a little piece of shopping heaven.</p>
-     
-     
-
+      <div className="container-fluid shoptophead">
+      <div className="header-text">
+      <h2 className="bigger-font text-white">SHOPPING</h2>
+      <p>Whether it’s luxury designer boutiques, concept shops or outlet malls.</p>
       </div>
-
+      </div>
       </header>
-     
 
-
-
-       <section>
-        <div>
-
-        </div>
-       </section>
-
-
-        <div>
-
-        </div>
-
-        <div>
-          
-        </div>
-
-        <div>
-
-        </div>
       </div>
         
 //       <div className="text-center">
