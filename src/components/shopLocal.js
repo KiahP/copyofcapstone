@@ -4,15 +4,15 @@ import "../index.css";
 
 
 const Shop = props => (
-  <tr>
-    <td>{props.shop.name}</td>
-    <td>{props.shop.description}</td>
-    <td><img src={props.shop.image} alt=""/></td>
-    <td>{props.shop.address}</td>
-    <td>{props.shop.city}</td>
-    <td>{props.shop.state}</td>
-    <td>{props.shop.zipcode}</td>
-  </tr>
+  <div className="card ">
+<img className="card-img-top" id="" src={props.shop.image}  alt=""/>
+<div className="card-body">
+   <h4 className="card-title">{props.shop.name}</h4>
+   <h5>{props.shop.address}{props.shop.city} {props.shop.state} {props.shop.zipcode}</h5>
+   <p className='card-text'>{props.shop.description}</p>
+ </div>
+ </div>
+
 )
 
 export default class shopLocal extends Component {
@@ -56,7 +56,13 @@ export default class shopLocal extends Component {
       </div>
       </header>
 
+      <div >
+           { this.shopLocal()  }
+                </div>
+     
+
       </div>
+     
         
 //       <div className="text-center">
 

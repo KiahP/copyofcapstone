@@ -2,16 +2,18 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import "../index.css";
 
-const Attraction = props => (
-  <tr>
-    <td>{props.attraction.name}</td>
-    <td>{props.attraction.description}</td>
-    <td><img src={props.attraction.image} alt=""/></td>
-    <td>{props.attraction.address}</td>
-    <td>{props.attraction.city}</td>
-    <td>{props.attraction.state}</td>
-    <td>{props.attraction.zipcode}</td>
-  </tr>
+const Attraction = props => (<div className="container col-md-4 d-flex">
+<div className="card ">
+<img className="card-img-top" id="" src={props.attraction.image}  alt=""/>
+<div className="card-body">
+   <h4 className="card-title">{props.attraction.name}</h4>
+   <h5>{props.attraction.address}{props.attraction.city} {props.attraction.state} {props.attraction.zipcode}</h5>
+   <p className='card-text'>{props.attraction.description}</p>
+ </div>
+ </div>
+ </div>
+
+  
 )
 
 export default class Attractions extends Component {
@@ -50,6 +52,11 @@ export default class Attractions extends Component {
       </div>
       </div>
       </header>
+      
+      <div >
+           { this.Attractions()  }
+                </div>
+
 
       </div>
         
