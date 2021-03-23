@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/copyofcapstone/static/css/main.9e48076f.chunk.css",
+    "main.js": "/copyofcapstone/static/js/main.e3714a5e.chunk.js",
+    "main.js.map": "/copyofcapstone/static/js/main.e3714a5e.chunk.js.map",
+    "runtime-main.js": "/copyofcapstone/static/js/runtime-main.0ec736fa.js",
+    "runtime-main.js.map": "/copyofcapstone/static/js/runtime-main.0ec736fa.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/copyofcapstone/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.a6851c35.chunk.js": "/copyofcapstone/static/js/2.a6851c35.chunk.js",
+    "static/js/2.a6851c35.chunk.js.map": "/copyofcapstone/static/js/2.a6851c35.chunk.js.map",
+    "static/js/3.47e9b909.chunk.js": "/copyofcapstone/static/js/3.47e9b909.chunk.js",
+    "static/js/3.47e9b909.chunk.js.map": "/copyofcapstone/static/js/3.47e9b909.chunk.js.map",
+    "index.html": "/copyofcapstone/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/copyofcapstone/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.9e48076f.chunk.css.map": "/copyofcapstone/static/css/main.9e48076f.chunk.css.map",
+    "static/js/2.a6851c35.chunk.js.LICENSE.txt": "/copyofcapstone/static/js/2.a6851c35.chunk.js.LICENSE.txt",
+    "static/media/Aarika.dfe9b85b.jpg": "/copyofcapstone/static/media/Aarika.dfe9b85b.jpg",
+    "static/media/Drake.97f7a9a2.jpg": "/copyofcapstone/static/media/Drake.97f7a9a2.jpg",
+    "static/media/FlyingPig.fd4a7815.jpg": "/copyofcapstone/static/media/FlyingPig.fd4a7815.jpg",
+    "static/media/Kiah.f6a19b95.jpg": "/copyofcapstone/static/media/Kiah.f6a19b95.jpg",
+    "static/media/index.css": "/copyofcapstone/static/media/shoppage.8b52d674.jpg",
+    "static/media/Ron.8a14e3f8.jpeg": "/copyofcapstone/static/media/Ron.8a14e3f8.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0ec736fa.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.a6851c35.chunk.js",
+    "static/css/main.9e48076f.chunk.css",
+    "static/js/main.e3714a5e.chunk.js"
+  ]
+}
