@@ -2,13 +2,22 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import "../index.css";
 
-const Attraction = props => (<div className="container col-md-4 d-flex">
-<div className="card ">
-<img className="card-img-top" id="" src={props.attraction.image}  alt=""/>
-<div className="card-body">
-   <h4 className="card-title">{props.attraction.name}</h4>
-   <h5>{props.attraction.address}{props.attraction.city} {props.attraction.state} {props.attraction.zipcode}</h5>
+const Attraction = props => (
+
+
+  <div className="card mb-3 card-style ">
+  <div className="row g-25">
+  <div className="col-md-4">
+<img className="shopattractimg" src={props.attraction.image}  alt=""/>
+</div>
+<div className="col-md-8">
+<div className="card-body card-shopattract-text zooani">
+   <h4 className="card-title titlestyle">{props.attraction.name}</h4>
    <p className='card-text'>{props.attraction.description}</p>
+   <p>{props.attraction.address} {props.attraction.city}, {props.attraction.state} {props.attraction.zipcode}</p>
+ 
+ 
+ </div>
  </div>
  </div>
  </div>
@@ -59,27 +68,7 @@ export default class Attractions extends Component {
 
 
       </div>
-        
-//       <div className="text-center">
-//         <h1>Family Fun in Cincy!</h1>
-//         <span >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, nesciunt illum tempore eius quam fugiat odio sapiente totam excepturi, vitae odit exercitationem corporis voluptatibus et modi. Saepe fuga sint quod, iusto deleniti voluptates ad obcaecati quae vel maxime eos, non at quia id aspernatur sequi! Saepe eligendi doloremque mollitia eos.</span>
-//         <table className="table">
-//     <thead className="thead-light">
-//       <tr>
-//         <th>Name</th>
-//         <th>Description</th>
-//         <th>Image</th>
-//         <th>Address</th>
-//         <th>City</th>
-//         <th>State</th>
-//         <th>Zipcode</th>
-//       </tr>
-//     </thead>
-//     <tbody>
-//       { this.Attractions() }
-//     </tbody>
-//   </table>
-// </div>
+      
 
 );
 }
